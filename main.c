@@ -57,7 +57,7 @@ int main(void)
     GPid child_pid;
     FILE *finput;
     FILE *foutput;
-    char *argv[] = {"/bin/sh", "-c", "gpicker --name-separator=\"\\n\" -", 0};
+    char *argv[] = {"/bin/sh", "-c", "gpicker -p --name-separator=\"\\n\" -", 0};
     gboolean ok = g_spawn_async_with_pipes(0, // work dir
                                            argv,
                                            0, //envp
